@@ -2,7 +2,7 @@
 FROM golang:1.21 as build
 
 WORKDIR /go/src/app
-COPY ../catgpt .
+COPY ./catgpt .
 
 RUN go mod download
 RUN CGO_ENABLED=0 go build -o /go/bin/app
