@@ -20,3 +20,4 @@
 # Go workspace file test
 go.work
 .terraform*
+tf*

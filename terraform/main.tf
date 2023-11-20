@@ -73,7 +73,7 @@ resource "yandex_compute_instance" "catgpt-1" {
     }
     metadata = {
       docker-compose = file("${path.module}/docker-compose.yaml")
-      ssh-keys  = "ubuntu:${file("~/.ssh/devops_training.pub")}"
+      ssh-keys  = "ubuntu:${file("C:/Users/USER/.ssh/id_rsa.pub")}"
     }
 }
 
